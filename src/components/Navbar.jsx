@@ -45,7 +45,7 @@ const navbar = () => {
           <div className="w-[1px] h-8 bg-golden" />
           <a href="/">Book Table</a>
         </div>
-        <div className="md:hidden">
+        <div className="block md:hidden">
           <GiHamburgerMenu
             color="#fff"
             fontSize={32}

@@ -1,13 +1,13 @@
 ---
 import Layout from "../layout/layout.astro";
-// import { Navbar } from "@/components";
+import { Navbar } from "@/components";
 import {
   Hero,
   AboutUs,
   Menu,
   Chef,
   Intro,
-  //   Laurels,
+  Laurels,
   //   FindUs,
   //   Newsletter,
   //   Footer,
@@ -16,13 +16,13 @@ import {
 
 <Layout>
   <h1>Hi</h1>
-  <!-- <Navbar client:only="react" /> -->
+  <Navbar client:only="react" />
   <Hero />
   <AboutUs />
   <Menu />
   <Chef />
   <Intro client:only="react" />
-  <!-- <Laurels /> -->
+  <Laurels />
   <!-- <Gallery client:only="react" /> -->
   <!-- <FindUs /> -->
   <!-- <Newsletter /> -->

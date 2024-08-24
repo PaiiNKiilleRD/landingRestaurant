@@ -1,4 +1,4 @@
-// export { default as Navbar } from "./Navbar.jsx"
+export { default as Navbar } from "./Navbar.jsx"
 export { default as SubHeader } from "./SubHeader.astro"
 // export { default as SubHeaderJSX } from "./SubHeader.jsx"
 // export { default as ButtonJSX } from "./Button.jsx"

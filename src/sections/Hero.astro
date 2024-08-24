@@ -1,0 +1,51 @@
+---
+import { SubHeader, Button } from "@/components";
+import { Image } from "astro:assets";
+import { images } from "@/constants";
+
+// import { getImage } from "astro:assets";
+
+// const optimizedImage = await getImage({
+//   src: images.welcome,
+//   format: "webp",
+//   width: 500, // resize optional
+//   height: 500, // resize optional
+// });
+---
+
+<section
+  id="home"
+  class="flex items-center pt-[100px] md:pt-0 justify-center py-10 bg-black md:h-screen"
+>
+  <div
+    class="mx-auto flex-col gap-6 lg:gap-0 md:flex-row container flex items-center justify-between"
+  >
+    <article
+      class="flex flex-col items-start lg:items-start justify-center flex-[0.5]"
+    >
+      <SubHeader title={"Chase the new flavor"} />
+      <h1 class="h2">The key to fine dining</h1>
+      <p class="p">
+        Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
+        morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
+        tellus
+      </p>
+
+      <Button>Explore Menu</Button>
+    </article>
+
+    <article class="flex-[0.40]">
+      <!-- <Fragment <slot="head">
+        <link rel="preload" href={optimizedImage.src} as="image" />
+      </Fragment> -->
+      <Image
+        src={images.welcome}
+        alt=""
+        width={400}
+        height={400}
+        loading={"eager"}
+        class="w-[300px] lg:w-[600px]"
+      />
+    </article>
+  </div>
+</section>

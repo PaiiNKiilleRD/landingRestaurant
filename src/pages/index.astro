@@ -1,16 +1,29 @@
 ---
-
+import Layout from "../layout/layout.astro";
+// import { Navbar } from "@/components";
+import {
+  Hero,
+  //   AboutUs,
+  //   Menu,
+  //   Chef,
+  //   Laurels,
+  //   FindUs,
+  //   Newsletter,
+  //   Footer,
+} from "@/sections";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <h1>Hi</h1>
+  <!-- <Navbar client:only="react" /> -->
+  <Hero />
+  <!-- <AboutUs /> -->
+  <!-- <Menu /> -->
+  <!-- <Chef /> -->
+  <!-- <Intro client:only="react" /> -->
+  <!-- <Laurels /> -->
+  <!-- <Gallery client:only="react" /> -->
+  <!-- <FindUs /> -->
+  <!-- <Newsletter /> -->
+  <!-- <Footer /> -->
+</Layout>

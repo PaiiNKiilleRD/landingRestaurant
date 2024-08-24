@@ -1,0 +1,46 @@
+---
+import { SubHeader, Button } from "@/components";
+import { images } from "@/constants";
+import { Image } from "astro:assets";
+---
+
+<section
+  class="py-20 -mb-5 lg:-mb-10 relative w-full flex items-center justify-center"
+>
+  <Image
+    src={images.bg}
+    alt=""
+    class="w-full h-[100%] absolute object-cover -z-10"
+  />
+  <div
+    class="container w-full flex-col lg:flex-row flex gap-6 items-center justify-between"
+  >
+    <div class="w-full">
+      <SubHeader title={"Contact"} />
+      <h2
+        class="mt-4 mb-10 text-3xl tracking-wider uppercase md:text-5xl lg:text-8xl font-cormorant text-golden"
+      >
+        Find Us
+      </h2>
+      <p class="mb-6">
+        {" "}
+        Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG{" "}
+      </p>
+
+      <div class="flex flex-col gap-4 mb-5">
+        <p class="text-golden">Opening Hours</p>
+        <p>Mon - Fri: 10:00 am - 02:00 am</p>
+        <p>Sat - Sun: 10:00 am - 03:00 am</p>
+      </div>
+      <Button>Visit Us</Button>
+    </div>
+    <div>
+      <Image
+        src={images.findus}
+        width={300}
+        alt=""
+        class="w-[250px] md:w-[400px] lg:w-[650px]"
+      />
+    </div>
+  </div>
+</section>

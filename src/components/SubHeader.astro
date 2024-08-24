@@ -1,0 +1,11 @@
+---
+import Image from "astro/components/Image.astro";
+import { images } from "@/constants";
+
+const { title, classList } = Astro.props;
+---
+
+<div class={`${classList} my-4`}>
+  <p class="text-xl tracking-wider font-cormorant">{title}</p>
+  <Image src={images.spoon} alt="Spoon" width={50} />
+</div>

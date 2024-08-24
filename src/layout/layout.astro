@@ -1,0 +1,46 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <slot name="head" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  * {
+    scroll-behavior: smooth;
+    color: white;
+  }
+  body {
+    @apply bg-black;
+  }
+  .h2 {
+    @apply mt-4 text-3xl tracking-wider uppercase md:text-5xl lg:text-8xl font-cormorant text-golden;
+  }
+  .h3 {
+    @apply text-5xl md:text-7xl text-golden font-cormorant;
+  }
+  .p {
+    @apply my-4 font-open text-grey;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+</style>

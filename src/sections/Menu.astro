@@ -1,0 +1,63 @@
+---
+import { Button, MenuItem, SubHeader } from "@/components";
+import { Image } from "astro:assets";
+import { data, images } from "@/constants";
+---
+
+<section
+  id="menu"
+  class="w-full mt-[160px] md:mt-20 md:pb-10 py-24 lg:h-screen md:py-10"
+>
+  <div class="container">
+    <article class="w-full mb-10 text-center">
+      <SubHeader
+        classList={" flex flex-col items-center gap-y-4 justify-center"}
+        title={"Menu that fits you palatte"}
+      />
+      <h1 class="h2">Today’s Special</h1>
+    </article>
+
+    <div
+      class="flex flex-col items-center justify-center gap-12 lg:items-start lg:justify-between lg:flex-row"
+    >
+      <article class="flex-col flex-1 w-full">
+        <h2 class="w-full mb-10 text-4xl text-center font-cormorant">
+          Wine & Beer
+        </h2>
+        {
+          data.wines.map((wine, index) => (
+            <MenuItem
+              key={wine.title + index}
+              title={wine.title}
+              price={wine.price}
+              tags={wine.tags}
+            />
+          ))
+        }
+      </article>
+
+      <article class="w-[120px] md:w-[250px] lg:w-[400px]">
+        <Image src={images.menu} width={300} alt="" class="w-full h-auto" />
+      </article>
+
+      <article class="flex-col flex-1 w-full">
+        <h2 class="w-full mb-10 text-4xl text-center font-cormorant">
+          Cocktails
+        </h2>
+        {
+          data.cocktails.map((cocktails, index) => (
+            <MenuItem
+              key={cocktails.title + index}
+              title={cocktails.title}
+              price={cocktails.price}
+              tags={cocktails.tags}
+            />
+          ))
+        }
+      </article>
+    </div>
+    <div class="flex items-center justify-center w-full lg:mt-5">
+      <Button>View Menu</Button>
+    </div>
+  </div>
+</section>

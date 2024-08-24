@@ -1,0 +1,11 @@
+export { default as Hero } from "./Hero.astro"
+// export { default as AboutUs } from "./AboutUs.astro"
+// export { default as Menu } from "./Menu.astro"
+// export { default as Chef } from "./Chef.astro"
+// export { default as Intro } from "./Intro.jsx"
+// export { default as Laurels } from "./Laurels.astro"
+// export { default as Gallery } from "./Gallery.jsx"
+// export { default as FindUs } from "./FindUs.astro"
+// export { default as Newsletter } from "./Newsletter.astro"
+// export { default as Footer } from "./Footer.astro"
+

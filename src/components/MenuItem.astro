@@ -1,0 +1,19 @@
+---
+const { title, price, tags } = Astro.props;
+---
+
+<article class="flex flex-col w-full my-6 lg:my-12">
+  <header class="flex items-center justify-between w-full lg:text-xl">
+    <p class="font-bold min-w-[120px] tracking-wide font-cormorant text-golden">
+      {title}
+    </p>
+
+    <div class="w-[90px] h-[1px] bg-golden mx-4"></div>
+    <div class="flex items-end justify-end">
+      <p class="font-sans text-white">{price}</p>
+    </div>
+  </header>
+  <div class="w-full mt-1">
+    <p class="font-sans text-sm text-gray">{tags}</p>
+  </div>
+</article>

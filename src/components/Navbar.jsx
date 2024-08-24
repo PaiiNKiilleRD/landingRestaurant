@@ -19,7 +19,7 @@ const navbar = () => {
           src={images.gericht.src}
           loading="eager"
           alt="Logo"
-          className="w-[150px] lg:w-[250px]"
+          className="w-[150px] lg:w-[250px] pointer"
         />
         <ul className=" items-center justify-center flex-1 [&>li]:px-4 hover:[&>li]:text-grey hidden lg:flex">
           <li>

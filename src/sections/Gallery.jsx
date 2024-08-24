@@ -33,7 +33,7 @@ const Gallery = () => {
     <section className="w-full mb-10 md:my-14 md:pt-12 lg:my-10 lg:mb-20 flex">
       <div className="flex-col md:flex-row gap-5 md:gap-0 flex w-full items-center md:overflow-hidden ">
         <div className="lg:flex-1 flex flex-col pl-12 lg:pl-[380px]  lg:pr-28 items-start justify-center  ">
-          {/* <SubHeaderJSX title={"Instagram"}></SubHeaderJSX> */}
+          <SubHeaderJSX title={"Instagram"}></SubHeaderJSX>
           <h2 className=" mb-5 text-3xl tracking-wider uppercase md:text-5xl font-cormorant text-golden">
             Photo Gallery
           </h2>
@@ -41,7 +41,7 @@ const Gallery = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
             quidem.
           </p>
-          {/* <ButtonJSX>View More</ButtonJSX> */}
+          <ButtonJSX>View More</ButtonJSX>
         </div>
         <div className="relative w-full md:max-w-[50%] flex-1 flex items-center ">
           <div

@@ -38,7 +38,7 @@ const navbar = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <div className="hidden lg:flex items-center justify-end [&>a]:mx-4 [&>a]:border-transparent [&>a]:border-b-[1px] hover:[&>a]:border-b-golden [&>a]:transition-all [&>a]:duration-500 [&>a]:ease-in-out">
+        <div className="hidden md:flex items-center justify-end [&>a]:mx-4 [&>a]:border-transparent [&>a]:border-b-[1px] hover:[&>a]:border-b-golden [&>a]:transition-all [&>a]:duration-500 [&>a]:ease-in-out">
           <a href="#login" className="">
             Login / Register
           </a>
